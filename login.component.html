@@ -1,0 +1,36 @@
+<div class="loader" [hidden]="!showLoader">
+    <div class="text-center mt-5">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+<div class="container">
+    <div class="mt-3">
+        <div class="col-12 col-md-6 col-lg-4 mx-auto">
+            <h1>Login</h1>
+            <form #form="ngForm" (ngSubmit)="onFormSubmit()">
+                <div class="mt-3">
+                    <label form="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" [(ngModel)]="model.email">
+                </div>
+
+                <div class="mt-3">
+                    <label form="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" [(ngModel)]="model.password">
+
+                </div>
+
+                <div *ngIf="errorMessage" class="mt-3 text-danger">{{ errorMessage }}</div>
+                 <!-- Add loader element here -->
+       
+
+                <div class="mt-3">
+                    <button type="submit" clas="btn btn-primary">Login</button>
+                    <button routerLink="/register" class="btn btn-link">Register</button>
+                     
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

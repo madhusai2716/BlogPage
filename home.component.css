@@ -1,0 +1,65 @@
+.custom-logo {
+    width: 30px; /* Adjust this value to resize the logos */
+    height: 30px; /* Adjust this value to resize the logos */
+    margin-right: 10px; /* Optional: Add some spacing between logos */
+}
+/* Primary Color */
+.primary-color {
+    color: #0c7038; 
+  }
+  
+  /* Accent Color */
+  .accent-color {
+    color: #00FFA2; /* Neon Green */
+  }
+  
+  /* Background Color */
+  body {
+    background-color: #f5f5f5; /* Light Gray */
+    color: #333; /* Dark Gray */
+  }
+  
+  .container {
+    background-color: #fff; /* White */
+    padding: 20px;
+  }
+  
+  /* Links */
+  a {
+    color: #0000FF; /* Blue */
+  }
+  
+  a:hover {
+    color: #00008B; /* Dark Blue */
+  }
+  
+  /* Buttons */
+  .btn {
+    background-color: #38d808; 
+    border-color: #40e413; 
+    color: #fff; /* White */
+  }
+  
+  .btn:hover {
+    background-color: #1ad45e; 
+    border-color: #055411; 
+  }
+  
+  /* Cards */
+  .card {
+    background-color: #ffffff; /* White */
+    border: 1px solid #ccc; /* Light Gray */
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    color: #15391a; 
+  }
+  
+  .card-text {
+    color: #666; /* Dark Gray */
+  }
+  

@@ -1,0 +1,37 @@
+<div class="loader" [hidden]="!showLoader1">
+    <div class="text-center mt-5">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container">
+    <div class="mt-3">
+        <div class="col-12 col-md-6 col-lg-4 mx-auto">
+            <h1>Register</h1>
+            <form #form="ngForm" (ngSubmit)="onFormSubmit()">
+                <div class="mt-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="model.email" required>
+
+                    <div *ngIf="invalidEmailFormat" class="text-danger">Invalid mail format</div>
+                </div>
+
+                <div class="mt-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" [(ngModel)]="model.password" required>
+                    <div *ngIf="invalidPasswordFormat" class="text-danger">Password must be at least 6 characters long and contain at least one special character.</div>
+                </div>
+
+                <div *ngIf="errorMessage" class="mt-3 text-danger">{{ errorMessage }}</div>
+
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                    <a routerLink="/login" class="btn btn-link">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+/* app.component.css */
+:host {
+    /* Change background color */
+    background-color: blue; /* Example color */
+  }
+  
+  /* Change text color */
+  .title {
+    color: #333; /* Example color */
+  }
+  
+  /* Change color of app-navbar */
+  /* app-navbar {
+    background-color: #333; /* Example color */
+  
+  
+  /* Add any other styles you want to modify */
+  
